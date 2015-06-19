@@ -1,0 +1,628 @@
+/* 
+    Document   : style
+    Created on : Jul 23, 2012, 3:56:09 PM
+    Author     : Administrator
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+html,body{
+    color: #666666;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", sans-serif;
+    font-size: 13px;
+}
+
+h3 {
+    color: #4c4c4c;
+    font-weight: normal;
+    line-height: 18px;
+}
+.stocks-header, .trade-history-header {
+    margin: 0 28px 26px;
+}
+.summary-header {
+    margin: 0 2px 2px;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.error, label.warning {
+    color: red;
+    font-size: 12px;
+}
+
+.message {
+    color: blue;
+    font-size: 12px;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+button.warning {
+    background-color: #cc0000;
+    color: white;
+}
+
+.price {
+    width: 10em !important;
+}
+
+.help {
+    color: #777777;
+    font-size: 12px;
+}
+
+#big-wrapper{
+    height: 100%;
+    margin: auto;
+    position: relative;
+    width: 972px;
+}
+
+#header {
+    height: 110px;
+    padding-right: 14px;
+}
+
+#header img {
+    margin: 19px 20px;
+}
+
+#welcome-message {
+    float: right;
+    text-align: right;
+}
+
+#welcome-message h2{
+    color: #555555;
+    margin: 48px 0 2px;
+}
+
+#welcome-message h4 {
+    color: #9a9a9a;
+    font-weight: normal;
+    margin: 0;
+}
+
+#logout-button {
+    line-height: 28px;
+    position: absolute;
+    right: 11px;
+    top: -1px;
+}
+
+#nav{
+    height: 35px;
+    padding: 0 11px;
+}
+
+.nav-item {
+    background-color: #f2f2f2;
+    border: 1px solid #aaaaaa;
+    color: #666666;
+    font-size: 1.1em;
+    text-align: center;
+    width: 118px;
+}
+
+.nav-tab {
+    float: right;
+    line-height: 34px;
+    margin-left: 6px;
+}
+
+#content-wrapper {
+    border: 1px solid #aaaaaa;
+    padding: 30px;
+}
+
+#content{
+    min-height: 100%;
+    padding: 20px;
+    float: left;
+    margin-top: 30px;
+    width: 620px;
+}
+
+#content-left{
+    min-height: 100%;
+    padding: 20px;
+    float: left;
+    border-right: 1px solid #cccccc;
+    width: 150px;
+}
+
+.clear{
+    clear: both;
+}
+
+#footer{
+    font-size: 0.85em;
+    margin: 44px 0 6px;
+    text-align: right;
+}
+
+#form-wrapper{
+    padding: 20px;
+    /*width: 460px;*/
+}
+
+fieldset input[type=text], fieldset input[type=password], fieldset textarea {
+    width: 250px;
+    padding: 3px;
+    margin-bottom: 5px;
+} 
+
+fieldset legend{
+    font-weight: bold;
+    color: #333333;
+}
+
+#contest, #organization {
+    margin-bottom: 8px;
+}
+
+#form-wrapper input[type=submit]{
+    margin-top: 10px;
+} 
+
+#form-wrapper-left{
+    width: 210px;
+    border: solid #000 1px;
+    float: left;
+}
+
+#form-wrapper-right{
+    width: 210px;
+    border: solid #000 1px;
+    float: right;
+}
+
+.edit_alert_div{
+    display:none;   
+    z-index:500; 
+    font-size:15px;      
+    background-color:#f7f6f6;    
+    border-radius:5px;
+    border:#c3c1c1 solid 4px;    
+    -moz-box-shadow: 0 0 8px #9e9d9d;
+    -webkit-box-shadow: 0 0 8px #9e9d9d;
+    box-shadow: 0 0 8px #9e9d9d;  
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -95px;
+    visibility: hidden;    
+    padding: 0;
+    height: 250px;
+    width: 400px;   
+}
+
+#main-div{
+    width: 400px;
+    
+}
+
+#main-div div{
+    width: 100px;
+    float: left;
+}
+
+#main-div div div{
+    width: 300px;
+    float: right;
+}
+
+.tbl {
+   
+     border:3px solid #000;
+}
+.altrowstable {
+    font-family: verdana,arial,sans-serif;
+    border-collapse: collapse;
+}
+.altrowstable th {
+    background-color:#e4e4e4;
+    border-color:  #aaaaaa;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 14px;
+    text-align: left;
+}
+.altrowstable td {
+    border-color: #aaaaaa;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 14px;
+}
+.oddrowcolor {
+    background-color: #ffffff;
+}
+.evenrowcolor {
+	background-color: #f2f2f2;
+}
+.selectedrowcolor {
+    background-color: #d8d8d8 !important;
+}
+
+th a {
+    color: #666666;
+    text-decoration: none;
+}
+th.selected a {
+    color: #ffffff;
+}
+
+th.selectable {
+    padding: 0;
+}
+
+th.selected {
+    background-color: #999999;
+    padding: 0;
+}
+
+th .arrow-wrapper {
+    line-height: 32px;
+    padding-left: 12px;
+    position: relative;
+    width: 106px;
+}
+
+th .arrow {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    position: absolute;
+    right: 12px;
+}
+th .arrow.asc {
+    top: 12px;
+}
+th .arrow.desc {
+    top: 18px
+}
+
+th.selected .arrow.asc {
+    border-bottom: 4px solid #ffffff;
+}
+th.selected .arrow.desc {
+    border-top: 4px solid #ffffff;
+}
+th.selectable .arrow.asc {
+    border-bottom: 4px solid #686868;
+}
+th.selectable .arrow.desc {
+    border-top: 4px solid #686868;
+}
+
+.long-header th {
+	background-color:#f2f2f2;
+    font-size: 1.1em;
+}
+
+.table-price {
+    text-align: right;
+}
+
+.table-label {
+    text-align: right;
+}
+
+/* Summary Page */
+
+#summary {
+    margin: 0 26px;
+}
+
+.instructor-message {
+    background-color: #eeeeee;
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+    color: #555555;
+    cursor: pointer;
+    max-width: 859px;
+    overflow: hidden;
+    padding: 8px 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.instructor-message:hover {
+    background-color: #dddddd;
+}
+
+.instructor-message.expanded {
+    white-space: normal !important;
+}
+
+.instructor-message .message-date {
+    color: #888888;
+}
+
+#message-list .instructor-message {
+    margin-top: 12px;
+}
+
+#summary-message {
+    margin-bottom: 44px;
+}
+
+#summary-message a {
+    float: right;
+    margin: 2px;
+    text-decoration: none;
+}
+#summary-message a:hover {
+    text-decoration: underline;
+}
+
+
+#portfolio-summary {
+    float: left;
+}
+
+#portfolio-summary .table-label {
+    width: 198px;
+}
+
+#portfolio-summary .table-price {
+    font-size: 1.1em;
+    width: 88px;
+}
+
+#ranking {
+    float: left;
+    margin-left: 48px;
+    text-align: center;
+}
+
+#ranking th {
+    text-align: center;
+}
+
+#ranking td {
+    width: 179px;
+}
+
+#ranking .my-ranking {
+    border: 18px solid #666666;
+    border-radius: 64px;
+    color: #898a7a;
+    font-size: 4.2em;
+    line-height: 87px;
+    margin: 0 auto;
+    width: 87px;
+}
+
+#ranking .ranking-label {
+    color: #898a7a;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+#leaderboard {
+    float: right;
+}
+
+#leaderboard td {
+    width: 178px;
+}
+
+#stock-performance {
+    float: left;
+    margin-top: 74px;
+}
+
+#stock-performance th {
+    width: 430px;
+}
+
+#stock-performance-legend li {
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 2px;
+    float: left;
+    font-size: 1.1em;
+    line-height: 32px;
+    margin: 12px 2px 0;
+    text-align: center;
+    width: 48px;
+}
+
+#contest-summary {
+    float: right;
+    margin-top: 74px;
+}
+
+#contest-summary .table-label {
+    width: 140px;
+}
+
+/* Stocks Page */
+
+#search-stocks {
+    float: left;
+    margin: 0 174px 0 31px;
+    width: 353px;
+}
+
+.big-label {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+.stock-search input {
+    font-size: 1.1em;
+    padding: 6px 4px;
+}
+
+.stock-search #sym {
+    width: 186px;
+}
+
+.price-co, .price-detail {
+    margin-top: 12px;
+}
+
+.price-co input, .price-detail input {
+    padding: 9px 4px;
+}
+
+.price-co {
+    float: left;
+}
+
+.price-co input {
+    width: 240px;
+}
+
+.price-detail {
+    float: right;
+}
+
+.price-detail input[type=text] {
+    text-align: right;
+    width: 64px;
+}
+
+.price-detail input[type=submit] {
+    text-align: center;
+    width: 79px;
+}
+
+.locked input {
+    cursor: default;
+}
+
+/* Stock History */
+
+#stock-list {
+    border-top: 2px dashed #dadada;
+    margin: 32px 0 0 10px;
+}
+
+#stock-list h3 {
+    line-height: 18px;
+    margin: 25px 18px 10px;
+}
+
+.stock-history {
+    padding: 16px 0 14px 21px ;
+}
+
+.stock-history-title {
+    float: left;
+    text-align: center;
+    width: 126px;
+}
+
+.stock-name {
+    background-color: #444444;
+    border: 1px solid #656565;
+    color: #dcdbe9;
+    padding: 4px 0;
+}
+
+.stock-name .stock-symbol {
+    font-size: 3.2em;
+    line-height: 46px;
+}
+
+.stock-name .stock-co-name {
+    font-size: 0.8em;
+    margin: 12px 0;
+}
+
+.price-today {
+    margin: 8px 0;
+}
+
+.price-today .price-value {
+    color: #4c4c4c;
+    font-size: 2.6em;
+    line-height: 36px;
+}
+
+.price-today .price-label {
+    color: #888888;
+    font-size: 1.2em;
+    line-height: 24px;
+}
+
+.stock-history-content {
+    float: left;
+    margin-left: 21px;
+    width: 596px;
+}
+
+.stock-co-description h4, .stock-co-description p {
+    color: #4c4c4c;
+    margin: 0 2px;
+}
+
+.stock-history-content table {
+    margin: 8px 0;
+}
+
+.stock-history-content th {
+    font-size: 0.9em;
+    font-weight: normal;
+    padding: 8px;
+}
+.stock-history-content td {
+    color: #4c4c4c;
+    font-weight: bold;
+    text-align: center;
+}
+
+.holding-info {
+    color: #4c4c4c;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 17px 3px 0;
+}
+
+.sell-form {
+    float: right;
+    /*margin: 15px 0;*/
+}
+
+.sell-form .price-detail {
+    margin-top: 4px;
+    position: relative;
+}
+
+.sell-form .error {
+    left: -8em;
+    position: absolute;
+    top: 4em;
+}
+
+.sell-form input[type=submit] {
+    margin: 4px 14px;
+}
+
+/* Trade History */
+
+.trade-history {
+    margin: 0 16px;
+}
+
+.next-link {
+    float: right;
+}
+
