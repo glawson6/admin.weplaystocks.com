@@ -12,10 +12,15 @@ class BaseMapper {
 //    private $dataBaseServerName="cashmobnetworknet.ipagemysql.com";
 //    private $database="sts_db";
 	
-	private $dataBaseUserName = "stocktradecffl";
-    private $dataBasePassword="b@tisteR0d";
-    private $dataBaseServerName="stocktradecffl.db.2684880.hostedresource.com";
-    private $database="stocktradecffl";
+//	private $dataBaseUserName = "stocktradecffl";
+//    private $dataBasePassword="b@tisteR0d";
+//    private $dataBaseServerName="stocktradecffl.db.2684880.hostedresource.com";
+//    private $database="stocktradecffl";
+
+	private $dataBaseUserName = "admin6h99x4M";
+    private $dataBasePassword="rzeAD7KAYIhR";
+    private $dataBaseServerName="";
+    private $database="php";
 
 //    private $dataBaseUserName = "root";
 //    private $dataBasePassword = "root";
@@ -31,8 +36,13 @@ class BaseMapper {
 
     //create the connection to the database
     public function OpenMySqlConnection() {
-        $this->connection = mysql_connect($this->dataBaseServerName, $this->dataBaseUserName, $this->dataBasePassword)
+    $this->host = getenv("OPENSHIFT_MYSQL_DB_HOST");
+        $this->connection = mysql_connect($this->host, $this->dataBaseUserName, $this->dataBasePassword)
                 or die('Could not connect to the Data Base');
+
+
+//        $this->connection = mysql_connect($this->dataBaseServerName, $this->dataBaseUserName, $this->dataBasePassword)
+//                or die('Could not connect to the Data Base');
 
         mysql_select_db($this->database, $this->connection)
                 or die('Could not Select the Data Base');
