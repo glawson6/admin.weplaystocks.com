@@ -16,16 +16,16 @@ class BaseMapper {
 //    private $dataBasePassword="b@tisteR0d";
 //    private $dataBaseServerName="stocktradecffl.db.2684880.hostedresource.com";
 //    private $database="stocktradecffl";
+// openshift
+//	private $dataBaseUserName = "admin6h99x4M";
+//    private $dataBasePassword="rzeAD7KAYIhR";
+//    private $dataBaseServerName="";
+//    private $database="php";
 
-	private $dataBaseUserName = "admin6h99x4M";
-    private $dataBasePassword="rzeAD7KAYIhR";
-    private $dataBaseServerName="";
-    private $database="php";
-
-//    private $dataBaseUserName = "root";
-//    private $dataBasePassword = "root";
-//    private $dataBaseServerName = "localhost";
-//    private $database = "trading_simulation";
+    private $dataBaseUserName = "admin";
+    private $dataBasePassword = "q52Gea0UaoRhMg0R";
+    private $dataBaseServerName = "172.17.0.13";
+    private $database = "db";
     
 //    private $dataBaseUserName = "insharp6_trading";
 //    private $dataBasePassword = "ee;yUT1pylRr";
@@ -36,13 +36,13 @@ class BaseMapper {
 
     //create the connection to the database
     public function OpenMySqlConnection() {
-    $this->host = getenv("OPENSHIFT_MYSQL_DB_HOST");
-        $this->connection = mysql_connect($this->host, $this->dataBaseUserName, $this->dataBasePassword)
-                or die('Could not connect to the Data Base');
-
-
-//        $this->connection = mysql_connect($this->dataBaseServerName, $this->dataBaseUserName, $this->dataBasePassword)
+//    $this->host = getenv("OPENSHIFT_MYSQL_DB_HOST");
+//        $this->connection = mysql_connect($this->host, $this->dataBaseUserName, $this->dataBasePassword)
 //                or die('Could not connect to the Data Base');
+
+
+        $this->connection = mysql_connect($this->dataBaseServerName, $this->dataBaseUserName, $this->dataBasePassword)
+                or die('Could not connect to the Data Base');
 
         mysql_select_db($this->database, $this->connection)
                 or die('Could not Select the Data Base');
