@@ -23,8 +23,8 @@ class BaseMapper {
 //    private $database="php";
 
     private $dataBaseUserName = "admin";
-    private $dataBasePassword = "q52Gea0UaoRhMg0R";
-    private $dataBaseServerName = "172.17.0.13";
+    private $dataBasePassword = "UVjc5Aa8onuGDRZs";
+    private $dataBaseServerName = "172.17.0.35";
     private $database = "db";
 
     
