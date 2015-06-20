@@ -26,7 +26,7 @@ class BaseMapper {
     private $dataBasePassword = "q52Gea0UaoRhMg0R";
     private $dataBaseServerName = "172.17.0.13";
     private $database = "db";
-    
+
     
 //    private $dataBaseUserName = "insharp6_trading";
 //    private $dataBasePassword = "ee;yUT1pylRr";
